@@ -151,32 +151,51 @@
 section{
     width: 100%;
     height: 100vh;
-    background-color: blueviolet;
+    background-image: url(assets/temp-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
+
 }
 .spinner{
     border-top: solid goldenrod 2px;
     border-bottom: solid goldenrod 2px;
     border-left: solid blueviolet 2px;
     border-right: solid blueviolet 2px;
-    width: 30%;
+    width: 20%;
     aspect-ratio: 1;
     position: absolute;
-    transform:translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
     border-radius: 50%;
-    animation: spinning 2s ease 0 infinite forwards;
+    -webkit-animation: rotate-center 3s linear infinite both;
+	animation: rotate-center 3s linear infinite both;
+    min-width: 200px;
 }
-@keyframes spinning {
-    100%{
-        rotate: 360deg;
+
+@-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
     }
-}
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
 .content{
     width: 20%;
     aspect-ratio: 1;
@@ -188,6 +207,8 @@ section{
     transform:translate(-50%, -50%);
     left: 50%;
     top: 50%;
+    text-align: center;
+    font-family: 'montSemiBold';
 }
 
 
