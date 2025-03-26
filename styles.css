@@ -197,6 +197,7 @@ section{
     }
   }
 .content{
+    color: aliceblue;
     width: 20%;
     aspect-ratio: 1;
     padding: 2rem;
