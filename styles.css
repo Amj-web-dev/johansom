@@ -216,6 +216,7 @@ backdrop-filter: blur( 4px );
     text-align: center;
     font-family: 'montSemiBold';
 	font-weight: 400;
+	font-size: .5rem;
 }
 .overlay{
     position: absolute;
